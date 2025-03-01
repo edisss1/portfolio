@@ -10,10 +10,29 @@
     --color-txt-secondary: #b0b0b0;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     min-height: 100vh;
     font-family: "Nunito", sans-serif;
-    @apply px-[clamp(1rem,10vw,4rem)] py-6 bg-bg text-txt-primary overflow-x-hidden;
+    @apply px-[clamp(0.75rem,5vw,4rem)] py-6 bg-bg text-txt-primary overflow-x-hidden;
+    scroll-behavior: smooth;
+}
+
+body::-webkit-scrollbar {
+    width: 6px;
+}
+
+body::-webkit-scrollbar-track {
+    background: var(--color-bg);
+}
+
+body::-webkit-scrollbar-thumb {
+    background-color: var(--color-accent);
+    border-radius: 20px;
+    height: 16px;
 }
 
 .blurred-circle {
@@ -29,6 +48,28 @@ body {
         rgba(50, 15, 133, 0) 100%
     );
     filter: blur(150px);
+}
+
+.blurred-bg {
+    position: relative;
+    background: rgb(187, 134, 252);
+    background: radial-gradient(
+        circle,
+        rgba(187, 134, 252, 0.2) 0%,
+        rgba(51, 169, 220, 0.2) 57%
+    );
+}
+
+.blurred-bg::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: inherit;
+    filter: blur(10px);
+    z-index: 0;
 }
 
 @media (max-width: 1024px) {

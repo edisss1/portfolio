@@ -1,6 +1,7 @@
 const TailwindIcon = () => {
     return (
         <svg
+            className="hover:animate-pulse"
             width="48"
             height="48"
             viewBox="0 0 48 48"

@@ -1,8 +1,15 @@
 import { Children } from "../../types/Children"
 
-const Container = ({ children }: Children) => {
+interface ContainerProps extends Children {
+    id?: string
+}
+
+const Container = ({ children, id }: ContainerProps) => {
     return (
-        <div className="w-full max-w-[1000px] mb-[clamp(2rem,20vh,8.625rem)]">
+        <div
+            id={id}
+            className="w-full max-w-[1000px] mb-[clamp(2rem,20vh,8.625rem)] grid place-items-center mx-auto gap-9"
+        >
             {children}
         </div>
     )
