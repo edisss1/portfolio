@@ -1,6 +1,8 @@
 import { ProjectCardProps } from "../types/ProjectCardProps"
 import ArtiflareIcon from "../assets/ArtiflareIcon.svg"
 import FurniroIcon from "../assets/FurniroLogo.png"
+import ArtiflareImage from "../assets/ArtiflareImage.webp"
+import FurniroImage from "../assets/FurniroImage.webp"
 
 export const projects: ProjectCardProps[] = [
     {
@@ -8,7 +10,7 @@ export const projects: ProjectCardProps[] = [
         description:
             "A digital canvas for teams to draw, visualize and brainstorm ideas",
         icon: ArtiflareIcon,
-        image: "/src/assets/ArtiflareImage.webp",
+        image: ArtiflareImage,
         isFeatured: true,
         link: "http://edisss1.github.io/artiflare",
         title: "Artiflare"
@@ -17,7 +19,7 @@ export const projects: ProjectCardProps[] = [
         id: 2,
         description: "A marketplace for furniture",
         icon: FurniroIcon,
-        image: "/src/assets/FurniroImage.webp",
+        image: FurniroImage,
         isFeatured: false,
         link: "https://edisss1.github.io/Furniro/",
         title: "Furniro"
