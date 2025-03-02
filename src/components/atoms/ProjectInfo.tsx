@@ -33,7 +33,11 @@ const ProjectInfo = ({
             <div className="w-full  grid gap-2 place-items-start  py-9 blurred-bg rounded-lg px-3">
                 <p className="font-bold">{description}</p>
             </div>
-            <a target="_blank" href={link} className="text-accent self-start">
+            <a
+                target="_blank"
+                href={link}
+                className="text-accent self-start rounded-full p-2 group hover:bg-accent/70 transition-all"
+            >
                 <ExternalLinkIcon />
             </a>
         </div>

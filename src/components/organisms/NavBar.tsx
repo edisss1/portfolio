@@ -1,3 +1,4 @@
+import Anchor from "../atoms/Anchor"
 import Logo from "../atoms/Logo"
 
 const NavBar = () => {
@@ -6,14 +7,14 @@ const NavBar = () => {
             <Logo />
             <ul className="flex gap-4 text-[clamp(1rem,2.5vw,1.5rem)]">
                 <li>
-                    <a href="#nav">home</a>
+                    <Anchor href="#nav">home</Anchor>
                 </li>
 
                 <li>
-                    <a href="#work">projects</a>
+                    <Anchor href="#work">projects</Anchor>
                 </li>
                 <li>
-                    <a href="#form">contact</a>
+                    <Anchor href="#form">contact</Anchor>
                 </li>
             </ul>
         </nav>
