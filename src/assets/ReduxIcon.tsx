@@ -1,7 +1,6 @@
 const ReduxIcon = () => {
     return (
         <svg
-            className="hover:animate-spin"
             width="48"
             height="48"
             viewBox="0 0 48 48"
