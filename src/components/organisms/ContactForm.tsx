@@ -30,7 +30,7 @@ const ContactForm = () => {
 
     return (
         <Container id="form">
-            <Header>Contact</Header>
+            <Header key={"contact"}>Contact</Header>
             <form
                 onSubmit={sendEmail}
                 ref={formRef}

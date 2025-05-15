@@ -5,7 +5,7 @@ import Tools from "../molecules/Tools"
 const ToolsDisplay = () => {
     return (
         <Container>
-            <Header>Tools that I use</Header>
+            <Header key={"tools"}>Tools that I use</Header>
             <Tools />
         </Container>
     )

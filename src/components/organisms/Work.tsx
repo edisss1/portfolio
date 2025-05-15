@@ -6,10 +6,11 @@ import { projects } from "../../constants/projects"
 const Work = () => {
     return (
         <Container id="work">
-            <Header>My work</Header>
+            <Header key={"work"}>My work</Header>
             <div className="flex flex-col gap-12 ">
                 {projects.map((project) => (
                     <ProjectCard
+                        isWIP={project.isWIP}
                         description={project.description}
                         icon={project.icon}
                         image={project.image}

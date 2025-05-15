@@ -1,4 +1,5 @@
 import CSSIcon from "../../assets/CSSIcon"
+import GoIcon from "../../assets/GoIcon"
 import HTMLIcon from "../../assets/HTMLIcon"
 import ReactIcon from "../../assets/ReactIcon"
 import ReduxIcon from "../../assets/ReduxIcon"
@@ -26,6 +27,9 @@ const Tools = () => {
             </ToolContainer>
             <ToolContainer shadowColor="hover:shadow-[#E44D26]">
                 <HTMLIcon />
+            </ToolContainer>
+            <ToolContainer shadowColor="hover:shadow-[#00ACD7]">
+                <GoIcon />
             </ToolContainer>
         </div>
     )
